@@ -8,8 +8,6 @@ import web1 from '../public/cookbook.png'
 import web3 from '../public/pytest.png'
 import web2 from '../public/coiny.png'
 import web4 from '../public/neighborhood.png'
-import web5 from '../public/web5.png'
-import web6 from '../public/web6.png'
 import { useState } from 'react'
 
 export default function Home() {
@@ -72,7 +70,7 @@ export default function Home() {
             </div>
             <div className='text-center shadow-lg p-10 rounded-xl my-10'>
               <h3 className='text-large font-medium pt-2 pb-2 dark:text-white'>Front-End Development</h3>
-              <p className='py-2 dark:text-white'>Frameworks I know for developing websites (not sure what to put here)</p>
+              <p className='py-2 dark:text-white'>Frameworks I k  w for developing websites (not sure what to put here)</p>
               <h4 className='py-4 text-teal-600'>Front-End tools I use</h4>
               <p className='text-gray-800 py-1 dark:text-white'>React</p>
               <p className='text-gray-800 py-1 dark:text-white'>Next</p>
