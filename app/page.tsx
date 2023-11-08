@@ -4,9 +4,6 @@ import { BsFillMoonStarsFill } from 'react-icons/bs'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 import Image from 'next/image'
 import profilepic from '../public/profile-pic.jpg'
-import design from '../public/design.png'
-import code from '../public/code.png'
-import consulting from '../public/consulting.png'
 import web1 from '../public/cookbook.png'
 import web3 from '../public/pytest.png'
 import web2 from '../public/coiny.png'
@@ -67,7 +64,7 @@ export default function Home() {
             </div>
             <div className='text-center shadow-lg p-10 rounded-xl my-10'>
               <h3 className='text-large font-medium pt-2 pb-2 dark:text-white'>Favorite Tools</h3>
-              <p className='py-2 dark:text-white'>Here are some tools I've worked with in the past</p>
+              <p className='py-2 dark:text-white'>Here are some tools I`&apos;ve worked with in the past</p>
               <h4 className='py-4 text-teal-600'>Developer Tools</h4>
               <p className='text-gray-800 py-1 dark:text-white'>VSCode</p>
               <p className='text-gray-800 py-1 dark:text-white'>Docker</p>
