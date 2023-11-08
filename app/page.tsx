@@ -3,14 +3,14 @@
 import { BsFillMoonStarsFill } from 'react-icons/bs'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 import Image from 'next/image'
-import deved from '../public/dev-ed-wave.png'
+import profilepic from '../public/profile-pic.jpg'
 import design from '../public/design.png'
 import code from '../public/code.png'
 import consulting from '../public/consulting.png'
-import web1 from '../public/web1.png'
-import web2 from '../public/web2.png'
-import web3 from '../public/web3.png'
-import web4 from '../public/web4.png'
+import web1 from '../public/cookbook.png'
+import web3 from '../public/pytest.png'
+import web2 from '../public/coiny.png'
+import web4 from '../public/neighborhood.png'
 import web5 from '../public/web5.png'
 import web6 from '../public/web6.png'
 import { useState } from 'react'
@@ -32,23 +32,24 @@ export default function Home() {
           </nav>
           <div className='text-center p-10'>
             <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl dark:text-white'>Alan Han</h2>
-            <h3 className='text-2xl py-2 md:text-3xl dark:text-white'>Student and Researcher</h3>
+            <h3 className='text-2xl py-2 md:text-3xl dark:text-white'>Student at Cornell University</h3>
             <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-white'>Looking to learn more about Software Engineering! My recent projects are listed down below.</p>
           </div>
           <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-white'>
             <a target="_blank" rel="noopener noreferrer" href='https://github.com/h-alan'><AiFillGithub /></a>
             <a target="_blank" rel="noopener noreferrer" href='https://www.linkedin.com/in/alan-han-2b7b0a23a/'><AiFillLinkedin /></a>
           </div>
-          <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96'>
-            <Image src={deved} layout='fill' objectFit='cover' alt='' />
+          <div className='relative mx-auto rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96'>
+            <Image src={profilepic} alt='' style={{ objectFit: "cover" }} />
           </div>
+
         </section>
 
         {/* Cards and Skills */}
         <section>
           <div>
-            <h3 className='text-3xl py-1 dark:text-white'>Services I offer</h3>
-            <p className='text-md py-2 leading-8 text-gray-800 dark:text-white'>Object-Oriented Programming & Data Structures,
+            <h3 className='text-3xl py-1 dark:text-white'>My Interests</h3>
+            <p className='text-md py-2 leading-8 text-gray-800 dark:text-white'>Relevant Coursework: Object-Oriented Programming & Data Structures,
               <span className='text-teal-500'> Data Structures and Algorithms</span>, Functional Programming, Linear Algebra,
               <span className='text-teal-500'> Foundations of Artificial Intelligence</span>, Differential Equations</p>
             <p className='text-md py-2 leading-8 text-gray-800 dark:text-white'>
@@ -57,31 +58,28 @@ export default function Home() {
           </div>
           <div className='lg:flex gap-10'>
             <div className='text-center shadow-lg p-10 rounded-xl my-10'>
-              <Image src={design} width={100} height={100} alt='' />
-              <h3 className='text-large font-medium pt-8 pb-2 dark:text-white'>Beautiful Designs</h3>
-              <p className='py-2 dark:text-white'>Creating elegant designs suited for your needs following our core design theory</p>
-              <h4 className='py-4 text-teal-600'>Design tools I use</h4>
-              <p className='text-gray-800 py-1 dark:text-white'>Photoshop</p>
-              <p className='text-gray-800 py-1 dark:text-white'>Illustrator</p>
-              <p className='text-gray-800 py-1 dark:text-white'>Figma</p>
+              <h3 className='text-large font-medium pt-2 pb-2 dark:text-white'>Programming Languages</h3>
+              <p className='py-2 dark:text-white'>These are languages I am proficient in an interested in working with</p>
+              <h4 className='py-4 text-teal-600'>Languages:</h4>
+              <p className='text-gray-800 py-1 dark:text-white'>Java</p>
+              <p className='text-gray-800 py-1 dark:text-white'>Python</p>
+              <p className='text-gray-800 py-1 dark:text-white'>C/C++</p>
             </div>
             <div className='text-center shadow-lg p-10 rounded-xl my-10'>
-              <Image src={code} width={100} height={100} alt='' />
-              <h3 className='text-large font-medium pt-8 pb-2 dark:text-white'>Beautiful Designs</h3>
-              <p className='py-2 dark:text-white'>Creating elegant designs suited for your needs following our core design theory</p>
-              <h4 className='py-4 text-teal-600'>Design tools I use</h4>
-              <p className='text-gray-800 py-1 dark:text-white'>Photoshop</p>
-              <p className='text-gray-800 py-1 dark:text-white'>Illustrator</p>
-              <p className='text-gray-800 py-1 dark:text-white'>Figma</p>
+              <h3 className='text-large font-medium pt-2 pb-2 dark:text-white'>Favorite Tools</h3>
+              <p className='py-2 dark:text-white'>Here are some tools I've worked with in the past</p>
+              <h4 className='py-4 text-teal-600'>Developer Tools</h4>
+              <p className='text-gray-800 py-1 dark:text-white'>VSCode</p>
+              <p className='text-gray-800 py-1 dark:text-white'>Docker</p>
+              <p className='text-gray-800 py-1 dark:text-white'>Linux/Unix</p>
             </div>
             <div className='text-center shadow-lg p-10 rounded-xl my-10'>
-              <Image src={consulting} width={100} height={100} alt='' />
-              <h3 className='text-large font-medium pt-8 pb-2 dark:text-white'>Beautiful Designs</h3>
-              <p className='py-2 dark:text-white'>Creating elegant designs suited for your needs following our core design theory</p>
-              <h4 className='py-4 text-teal-600'>Design tools I use</h4>
-              <p className='text-gray-800 py-1 dark:text-white'>Photoshop</p>
-              <p className='text-gray-800 py-1 dark:text-white'>Illustrator</p>
-              <p className='text-gray-800 py-1 dark:text-white'>Figma</p>
+              <h3 className='text-large font-medium pt-2 pb-2 dark:text-white'>Front-End Development</h3>
+              <p className='py-2 dark:text-white'>Frameworks I know for developing websites (not sure what to put here)</p>
+              <h4 className='py-4 text-teal-600'>Front-End tools I use</h4>
+              <p className='text-gray-800 py-1 dark:text-white'>React</p>
+              <p className='text-gray-800 py-1 dark:text-white'>Next</p>
+              <p className='text-gray-800 py-1 dark:text-white'>Tailwind</p>
             </div>
           </div>
         </section>
@@ -90,20 +88,19 @@ export default function Home() {
         <section>
           <div>
             <h3 className='text-3xl py-1 dark:text-white'>Projects</h3>
-            <p className='text-md py-2 leading-8 text-gray-800 dark:text-white'>Object-Oriented Programming & Data Structures,
-              <span className='text-teal-500'> Data Structures and Algorithms</span>, Functional Programming, Linear Algebra,
-              <span className='text-teal-500'> Foundations of Artificial Intelligence</span>, Differential Equations</p>
-            <p className='text-md py-2 leading-8 text-gray-800 dark:text-white'>
-              Currently conducting research in Software Engineering related to testing and runtime verification.
+            <p className='text-xl py-2 leading-8 text-gray-800 dark:text-white'>
+              Feel free to click on each to learn more!
             </p>
           </div>
           <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
-            <div className='basis-1/3 flex-1'><Image className='rounded-lg object-cover' layout='responsive' src={web1} alt='' /></div>
-            <div className='basis-1/3 flex-1'><Image className='rounded-lg object-cover' layout='responsive' src={web2} alt='' /></div>
-            <div className='basis-1/3 flex-1'><Image className='rounded-lg object-cover' layout='responsive' src={web3} alt='' /></div>
-            <div className='basis-1/3 flex-1'><Image className='rounded-lg object-cover' layout='responsive' src={web4} alt='' /></div>
-            <div className='basis-1/3 flex-1'><Image className='rounded-lg object-cover' layout='responsive' src={web5} alt='' /></div>
-            <div className='basis-1/3 flex-1'><Image className='rounded-lg object-cover' layout='responsive' src={web6} alt='' /></div>
+            <div className='basis-1/3 flex-1 hover:brightness-50'>
+              <a target="_blank" rel="noopener noreferrer" href='https://h-alan.github.io/cook-book/'>
+                <Image className='rounded-lg object-cover' src={web1} alt='' />
+              </a>
+            </div>
+            <div className='basis-1/3 flex-1 hover:brightness-50'><Image className='rounded-lg object-cover' src={web2} alt='' /></div>
+            <div className='basis-1/3 flex-1 hover:brightness-50'><Image className='rounded-lg object-cover' src={web3} alt='' /></div>
+            <div className='basis-1/3 flex-1 hover:brightness-50'><Image className='rounded-lg object-cover' src={web4} alt='' /></div>
           </div>
         </section>
       </main>
