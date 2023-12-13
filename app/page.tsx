@@ -91,7 +91,7 @@ export default function Home() {
                 </section>
 
                 {/* Project Section */}
-                <section>
+                <section className='pb-10'>
                     <div>
                         <h3 className='text-3xl py-1 dark:text-white' id='projects'>Projects</h3>
                         <p className='text-xl py-2 leading-8 text-gray-800 dark:text-white'>
@@ -152,6 +152,11 @@ export default function Home() {
                     </div>
                 </section>
             </main>
+            <div className='flex justify-center bg-gradient-to-r from-cyan-500 to-teal-500 py-10'>
+                <div className='text-lg leading-8 text-white md:text-xl max-w-xl'>
+                    Feel free to contact me at <b>ayh9@cornell.edu</b>
+                </div>
+            </div>
         </div >
     )
 }
