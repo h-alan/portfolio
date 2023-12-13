@@ -139,17 +139,6 @@ export default function Home() {
                             </p>
                         </div>
                     </div>
-                    <div className='flex'>
-                        <div className='w-1/2'>
-                            <a>
-                                <Image className='rounded-lg hover:brightness-50' src={web4} alt='' />
-                            </a>
-                        </div>
-                        <div className='ml-20 w-1/2'>
-                            <h3 className='text-xl py-1 leading-8 text-gray-800 dark:text-white'>...</h3>
-                            <p className='text-md py-1 leading-8 text-gray-800 dark:text-white'>...</p>
-                        </div>
-                    </div>
                 </section>
             </main>
             <div className='flex justify-center bg-gradient-to-r from-cyan-500 to-teal-500 py-10'>
